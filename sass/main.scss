@@ -1,0 +1,109 @@
+$color_1: #0d6efd;
+$background-color_1: #f0f2f5;
+$background-color_2: #d5d5d5;
+$border-color_1: transparent;
+
+
+.fs-0 {
+	font-size: 4rem;
+}
+.fs-7 {
+	font-size: 0.8rem;
+}
+.bg-gray {
+	background-color: #f0f2f5;
+}
+.nav__btn {
+	button {
+		&:hover {
+			background-color: #f0f2f5 !important;
+			i {
+				color: #0d6efd !important;
+			}
+		}
+	}
+}
+.nav__btn-active {
+	position: relative;
+	i {
+		color: #0d6efd !important;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: -4.5px;
+		left: 0;
+		transform: translateY(4.5px);
+		width: 100%;
+		height: 3px;
+		border-bottom: 3px solid #0d6efd !important;
+	}
+}
+.dropdown-item {
+	&:active {
+		background-color: #d5d5d5 !important;
+	}
+}
+.edit-button {
+	opacity: 0;
+	&:hover {
+		opacity: 1;
+	}
+}
+.edit-heading {
+	&:hover {
+		.edit-button {
+			opacity: 1;
+		}
+	}
+}
+.scrollbar {
+	&:hover {
+		overflow: auto !important;
+	}
+}
+.pop-avatar {
+	width: 48px;
+	height: 48px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.chat-box {
+	border: 0 !important;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.story {
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.pointer {
+	cursor: pointer;
+}
+.post__comment {
+	.accordion-button {
+		&::after {
+			margin-left: 0 !important;
+			display: none !important;
+		}
+		&:hover {
+			background: transparent !important;
+			border-color: transparent !important;
+		}
+		&:not(.collapsed) {
+			background: transparent !important;
+			box-shadow: none !important;
+		}
+	}
+}
+
+
+
+@media (min-width: 62em){
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
