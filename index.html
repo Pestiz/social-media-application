@@ -1,172 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./script/home-page.js" defer></script>
     <!-- bootstrap for css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>GreatTwitter || Login Page </title>
 
 </head>
+
 <body class="bg-gray">
-
-<div class="container">
-    <div class="col">
-
-<!-- login -->
-<div class="container d-fex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
-<!-- heading -->
-<div class="text-center text-lg-start mt-lg-5 pt-lg-5">
-    <h1 class="text-primary fw-bold fs-0">GreatTwitter</h1>
-    <p class="w-75 mx-auto mx-lg-0 fs-4">GreatTwitter Helps you connect and share with the people</p>
-</div>
-<!-- form -->
-<div class="container d-fex flex-column flex-lg-row justify-content-evenly mt-5 pt-5">
-<div style="max-width: 28rem; width: 100%;">
-    <div class="bg-white shadow rounded p-3 input-group-lg">
-        <input type="email" class="form-control my-3" placeholder="Email or phone number">
-        <input type="password" class="form-control my-3" placeholder="Password">
-        <a href="#">
-            <button class="btn btn-primary w-100 my-3">Log in</button>
-        </a>
-        <a href="#" class="text-decoration-none text-center">
-            <p>Forgotten Password?</p>
-        </a>
-        <!-- create form -->
-        <hr>
-        <div class="text-center my-4">
-            <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#createModal">Create New Account</button>
+    <!-- Login -->
+    <div class="container mt-5 pt-5 d-flex flex-column flex-lg-row justify-content-evenly">
+        <!-- heading -->
+        <div class="text-center text-lg-start mt-0 pt-0 mt-lg-5 pt-lg-5">
+            <h1 class="text-primary fw-bold fs-0">GreatTwitter</h1>
+            <p class="w-75 mx-auto fs-4 mx-lg-0">GreatTwitter helps you connect and share with the people in your life.
+            </p>
         </div>
-        <!-- create modal  -->
-
-  <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <!-- head -->
-        <div class="modal-header">
-            <div>
-                <h2 class="modal-title" id="createModalLabel">Sign Up</h2>
-                <p class="text-muted fs-7">It's easy to join GreatTwitter</p>
-            </div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!-- body -->
-        <div class="modal-body">
-            <!-- name -->
-          <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="First Name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Surname">
-            </div>
-          </div>
-          <!-- email -->
-          <input type="email" class="form-control my-3" placeholder="Mobile number or email">
-          <input type="password" class="form-control my-3" placeholder="Password">
-          <!-- date of birth -->
-          <div class="row my-3">
-            <span class="text-muted fs-7">Date of birth <i type="button" class="fa-regular fa-question" data-container="body" data-toggle="popover" data-placement="right" data-content="Sharing your birthday will help tailor your GreatTwitter experience to your age."></i>
-            </span>
-            <div class="col">
-                <select class="form-select">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <div class="col">
-                <select class="form-select">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-            <div class="col">
-                <select class="form-select">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-         </div>
-         <!-- gender -->
-         <div class="row my-3">
-            <span class="text-muted fs-7">Gender <i type="button" class="fa-regular fa-question" data-container="body" data-toggle="popover" data-placement="right" data-content="You can change the visibility of your gender in your profile later."></i>
-            </span>
-            <div class="col">
-                <div class="border rounded p-2">
-                    <label class="form-check-label" for="flexRadioDefault">
-                        Male
-                    </label>
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+        <!-- form card -->
+        <div style="max-width: 28rem; width: 100%">
+            <!-- login form -->
+            <!-- first was form tag -->
+            <div class="bg-white shadow rounded p-3 input-group-lg">
+                <input type="email" class="form-control my-3" placeholder="Email address or phone number" />
+                <input type="password" class="form-control my-3" placeholder="Password" />
+                <a href="./home-page.html"><button class="btn btn-primary w-100 my-3">Log In</button></a>
+                <a href="#" class="text-decoration-none text-center">
+                    <p>Forgotten password?</p>
+                </a>
+                <!-- create form -->
+                <hr />
+                <div class="text-center my-4">
+                    <button class="btn btn-success btn-lg" type="button" data-bs-toggle="modal"
+                        data-bs-target="#createModal">Create New Account</button>
                 </div>
-            </div>
-            <div class="col">
-                <div class="border rounded p-2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Female
-                    </label>
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                <!-- create modal -->
+                <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <!-- head -->
+                            <div class="modal-header">
+                                <div>
+                                    <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
+                                    <span class="text-muted fs-7">It's quick and easy.</span>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- body -->
+                            <div class="modal-body">
+                                <form>
+                                    <!-- names -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="First name" />
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Surname" />
+                                        </div>
+                                    </div>
+                                    <!-- email & pass -->
+                                    <input type="email" class="form-control my-3"
+                                        placeholder="Mobile number or email address" />
+                                    <input type="password" class="form-control my-3" placeholder="New password" />
+                                    <!-- DOB -->
+                                    <div class="row my-3">
+                                        <span class="text-muted fs-7">Date of birth <i class="fas fa-question-circle"
+                                                data-bs-toggle="popover" type="button"
+                                                data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                                        <div class="col">
+                                            <select class="form-select">
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-select">
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-select">
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- gender -->
+                                    <div class="row my-3">
+                                        <span class="text-muted fs-7">Gender <i class="fas fa-question-circle"
+                                                data-bs-toggle="popover" type="button"
+                                                data-bs-content="And here's some amazing content. It's very engaging. Right?"></i></span>
+                                        <div class="col">
+                                            <div class="border rounded p-2">
+                                                <label class="form-check-label" for="flexRadioDefault1">Male </label>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1" />
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="border rounded p-2">
+                                                <label class="form-check-label" for="flexRadioDefault1">Female </label>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2" />
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="border rounded p-2">
+                                                <label class="form-check-label" for="flexRadioDefault1">Mafej </label>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault3" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="text-center mt-3">
+                                        <button type="button" class="btn btn-success btn-lg"
+                                            data-bs-dismiss="modal">Sign Up</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- modal end -->
             </div>
-            <div class="col">
-                <div class="border rounded p-2">
-                    <label class="form-check-label" for="flexRadioDefault">
-                        Mafej
-                    </label>
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
-                </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white p-4 text-muted">
+        <div class="container">
+            <!-- language -->
+            <div class="d-flex flex-wrap">
+                <p class="mx-2 fs-7 mb-0">English (US)</p>
+                <p class="mx-2 fs-7 mb-0">Polish</p>
+                <p class="mx-2 fs-7 mb-0">中文(台灣)</p>
+                <p class="mx-2 fs-7 mb-0">Norwegian</p>
+                <p class="mx-2 fs-7 mb-0">German</p>
             </div>
-         </div>
+            <hr />
+            <!-- actions -->
+            <div class="d-flex flex-wrap">
+                <p class="mx-2 fs-7 mb-0">Sign Up</p>
+                <p class="mx-2 fs-7 mb-0">Login</p>
+                <p class="mx-2 fs-7 mb-0">GreatChat</p>
+                <p class="mx-2 fs-7 mb-0">GreatLite</p>
+            </div>
         </div>
-        <div class="text-center m3">
-            <button type="button" class="btn btn-success btn-lg mb-4" data-bs-dismiss="modal">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-        <!-- modal ends -->
-    </div>
-</div>
-<!-- footer starts -->
-<footer class="bg-white p-4 text-muted ">
-    <div class="container">
-        <!-- language -->
-        <div class="d-flex flex-wrap">
-            <p class="mx-2 fs-7 mb-0">English</p>
-            <p class="mx-2 fs-7 mb-0">Polish</p>
-            <p class="mx-2 fs-7 mb-0">Norwegian</p>
-            <p class="mx-2 fs-7 mb-0">Russian</p>
-            <p class="mx-2 fs-7 mb-0">German</p>
-        </div>
-         <!-- Acction -->
-         <div class="d-flex flex-wrap">
-            <p class="mx-2 fs-7 mb-0">Sign Up</p>
-            <p class="mx-2 fs-7 mb-0">Login</p>
-            <p class="mx-2 fs-7 mb-0">Greatenger</p>
-            <p class="mx-2 fs-7 mb-0">GreatTwitter Light</p>
-        </div>
-    </div>
-</footer>
-<!-- footer ends -->
-    </div>
-</div>
-
-
-
-<!-- Bootstrap Scripts  -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
