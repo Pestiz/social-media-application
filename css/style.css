@@ -69,6 +69,7 @@
   background: transparent !important;
   box-shadow: none !important; }
 
+  
 @media (min-width: 62em) {
   footer {
     position: fixed;
